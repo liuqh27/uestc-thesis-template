@@ -1,0 +1,101 @@
+% Minimal thesis template using UESTC class
+\documentclass{uestc_thesis}
+
+% Basic packages
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+% TikZ for vector graphics examples
+\usepackage{tikz}
+\usepackage{xcolor}
+% Listings / code examples
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\small, breaklines=true, columns=fullflexible}
+% Tables and algorithms
+\usepackage{booktabs}
+\usepackage[ruled,vlined]{algorithm2e}
+
+% theorem environments for examples
+\newtheorem{theorem}{定理}[chapter]
+\newtheorem{definition}{定义}[chapter]
+
+% bibliography (user can replace ref.bib)
+\addbibresource{ref.bib}
+
+	itle{示例：基于模板的论文}
+\author{学生姓名}
+\studentid{2023XXXXXXX}
+\discipline{信息与通信工程}
+\supervisor{指导教师}
+\school{信息与通信工程学院}
+
+\begin{document}
+\makecover
+
+\chapter*{摘\hspace{1em}要}
+\addcontentsline{toc}{chapter}{摘要}
+本模板提供了可直接使用的学位论文最小结构示例，示例章节取自 guideline.txt，供大伙快速套用与修改。
+
+	ableofcontents
+
+\mainmatter
+% 示例章节（可按需删除或替换）
+\input{chapters/chap1.tex}          % 写作规范示例（来自 guideline.txt）
+\input{chapters/chap2_citation.tex} % 引用示例（如何用 \cite）
+\input{chapters/chap3_fig_table.tex} % 图片与表格示例
+\input{chapters/chap4_tikz.tex}     % 矢量图（TikZ）示例
+\input{chapters/chap5_split_usage.tex} % 多文件拆分与包含说明
+
+\backmatter
+\chapter{致谢}
+感谢支持。
+
+\printbibliography[heading=bibintoc, title=参考文献]
+
+\end{document}
+% Minimal thesis template using UESTC class
+\documentclass{uestc_thesis}
+
+% Basic packages
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+% TikZ for vector graphics examples
+\usepackage{tikz}
+
+% bibliography (user can replace ref.bib)
+\addbibresource{ref.bib}
+
+\title{示例：基于模板的论文}
+\author{学生姓名}
+\studentid{2023XXXXXXX}
+\discipline{信息与通信工程}
+\supervisor{指导教师}
+\school{信息与通信工程学院}
+
+\begin{document}
+\makecover
+
+\chapter*{摘\hspace{1em}要}
+\addcontentsline{toc}{chapter}{摘要}
+本模板提供了可直接使用的学位论文最小结构示例，示例章节取自 guideline.txt，供大伙快速套用与修改。
+
+\tableofcontents
+
+\mainmatter
+% 示例章节（可按需删除或替换）
+\input{chapters/chap1.tex}          % 写作规范示例（来自 guideline.txt）
+\input{chapters/chap2_citation.tex} % 引用示例（如何用 \cite）
+\input{chapters/chap3_fig_table.tex} % 图片与表格示例
+\input{chapters/chap4_tikz.tex}     % 矢量图（TikZ）示例
+\input{chapters/chap5_split_usage.tex} % 多文件拆分与包含说明
+
+\backmatter
+\chapter{致谢}
+感谢支持。
+
+\printbibliography[heading=bibintoc, title=参考文献]
+
+\end{document}

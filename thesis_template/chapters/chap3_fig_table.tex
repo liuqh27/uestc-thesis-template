@@ -1,0 +1,39 @@
+﻿% 示例章节：插入图像与表格
+\chapter{图与表示例}
+\label{chap:figtable}
+
+\section{插入位图（PNG/JPG）}
+使用 \verb|figure| 环境与 \verb|\includegraphics|：
+\begin{figure}[H]
+    \centering
+    % 如果实际模板没有图片，请替换为你的文件名
+    \IfFileExists{images/example_plot.png}{%
+        \includegraphics[width=0.6\textwidth]{images/example_plot.png}%
+    }{%
+        \begin{center}
+            \fbox{\parbox{0.6\textwidth}{\centering 占位图：images/example_plot.png}}
+        \end{center}
+    }
+    \caption{示例位图插入}
+    \label{fig:example_bitmap}
+\end{figure}
+
+\section{表格示例}
+使用 \verb|table| 环境配合 \verb|tabular| 创建表格：
+\begin{table}[H]
+\centering
+\caption{示例表格}
+\label{tab:example}
+\begin{tabular}{lcc}
+\hline
+方法 & 精度 & 召回 \\
+\hline
+方法A & 0.91 & 0.87 \\
+方法B & 0.88 & 0.84 \\
+\hline
+\end{tabular}
+\end{table}
+
+表格标题应简洁，并在需要时加注释或表注说明数据来源。
+
+

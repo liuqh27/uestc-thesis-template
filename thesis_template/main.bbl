@@ -1,0 +1,70 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{example2025}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=252654e29e5656218f9b24e528dc0bf3}{%
+           family={王小明},
+           familyi={王\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=252654e29e5656218f9b24e528dc0bf3}{%
+           family={王小明},
+           familyi={王\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{252654e29e5656218f9b24e528dc0bf3}
+      \strng{fullhash}{252654e29e5656218f9b24e528dc0bf3}
+      \strng{fullhashraw}{252654e29e5656218f9b24e528dc0bf3}
+      \strng{bibnamehash}{252654e29e5656218f9b24e528dc0bf3}
+      \strng{authorbibnamehash}{252654e29e5656218f9b24e528dc0bf3}
+      \strng{authornamehash}{252654e29e5656218f9b24e528dc0bf3}
+      \strng{authorfullhash}{252654e29e5656218f9b24e528dc0bf3}
+      \strng{authorfullhashraw}{252654e29e5656218f9b24e528dc0bf3}
+      \strng{nameabibnamehash}{252654e29e5656218f9b24e528dc0bf3}
+      \strng{nameanamehash}{252654e29e5656218f9b24e528dc0bf3}
+      \strng{nameafullhash}{252654e29e5656218f9b24e528dc0bf3}
+      \strng{nameafullhashraw}{252654e29e5656218f9b24e528dc0bf3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{电子科技大学学报}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{示例参考文献条目}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{1}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+      \keyw{example2025}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

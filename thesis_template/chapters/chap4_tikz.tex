@@ -1,0 +1,18 @@
+% 示例章节：矢量图（TikZ）示例
+\chapter{矢量图示例（TikZ）}
+\label{chap:tikz}
+
+TikZ 能生成高质量的矢量图，适合画示意图与示例流程图。下面给出一个简单示例：
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=1, every node/.style={font=\small}]
+        \draw[thick,->] (0,0) -- (3,0) node[right]{x};
+        \draw[thick,->] (0,0) -- (0,2) node[above]{y};
+        \draw[blue,very thick] (0.2,0.2) .. controls (1,1.6) and (2,0.4) .. (2.8,1.6);
+        \node at (1.6,1.1) {示意曲线};
+    \end{tikzpicture}
+    \caption{TikZ 矢量图示例}
+    \label{fig:tikz_example}
+\end{figure}
+
+编译时会自动生成矢量结果，导出到 PDF 时保持高质量缩放。

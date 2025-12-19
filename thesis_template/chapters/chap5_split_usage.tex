@@ -1,0 +1,14 @@
+% 示例章节：如何将文档拆分为多个章节并在 main.tex 中包含
+\chapter{多文件拆分与包含说明}
+\label{chap:split}
+
+本模板示例已将各章节拆分为独立的 chapters/*.tex 文件，主文件 main.tex 使用 \verb|\input{chapters/xxx.tex}| 将它们包含进来。
+
+优点：
+\begin{itemize}
+    \item 每个章节独立编辑，便于协作与版本控制。
+    \item 减少单个文件长度，提高编辑器响应速度。
+    \item 可以 selectively input 需要编译的章节以加速调试（临时注释其他 \verb|\input|）。
+\end{itemize}
+
+示例：在 main.tex 中添加或删除 \verb|\input{chapters/your_chapter.tex}| 即可管理章节。
